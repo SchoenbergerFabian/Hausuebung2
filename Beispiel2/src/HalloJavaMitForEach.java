@@ -15,14 +15,20 @@ public class HalloJavaMitForEach {
 
     public void print(){
         for (String s : hello){
-            System.out.println(hello);
+            System.out.println(s);
         }
 
+        System.out.println("");
+
         hello.forEach(s -> System.out.println(s));
+
+        System.out.println("");
 
         Consumer<String> consumer = (String s) -> System.out.println(s);
         hello.forEach(consumer);
 
-        hello.forEach(System.out::print);
+        System.out.println("");
+
+        hello.forEach(System.out::println);
     }
 }
