@@ -73,13 +73,18 @@ public class NumberTester {
         int line = 1;
         while (line<=numberOfOperations){
             try{
-                String[] args = lines[line].split(" ");
-                if(args.length==2) {
-                    int operation = Integer.parseInt(args[0]);
-                    int number = Integer.parseInt(args[1]);
-                    operate(operation,number);
-                }else{
-                    System.out.println("line "+line+": Invalid number of arguments!");
+                if(line<lines.length){
+                    String[] args = lines[line].split(" ");
+
+                    if(args.length==2) {
+                        int operation = Integer.parseInt(args[0]);
+                        int number = Integer.parseInt(args[1]);
+                        operate(operation,number);
+                    }else{
+                        System.out.println("line "+line+": Invalid number of arguments!");
+                    }
+                } else{
+                    System.out.println("line "+line+": line doesn't exist!");
                 }
             }catch (NumberFormatException ex){
                 System.out.println("line "+line+": Invalid arguments!");
