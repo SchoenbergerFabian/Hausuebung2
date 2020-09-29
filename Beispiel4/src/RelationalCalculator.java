@@ -2,7 +2,7 @@ public class RelationalCalculator extends AbstractCalculator {
 
     public RelationalCalculator(){
         super((x,y)->{
-            Number result = new Number();
+            Number solution = new Number();
             double a;
             double b;
             if(x.getB()!=y.getB()){
@@ -12,11 +12,11 @@ public class RelationalCalculator extends AbstractCalculator {
                 a = x.getA() + y.getA();
                 b = x.getB();
             }
-            result.setA(a);
-            result.setB(b);
-            return result;
+            solution.setA(a);
+            solution.setB(b);
+            return solution;
         },(x, y) -> {
-            Number result = new Number();
+            Number solution = new Number();
             double a;
             double b;
             if(x.getB()!=y.getB()){
@@ -26,19 +26,19 @@ public class RelationalCalculator extends AbstractCalculator {
                 a = x.getA() - y.getA();
                 b = x.getB();
             }
-            result.setA(a);
-            result.setB(b);
-            return result;
+            solution.setA(a);
+            solution.setB(b);
+            return solution;
         },(x, y) -> {
-            Number result = new Number();
-            result.setA(x.getA()*y.getA());
-            result.setB(x.getB()*y.getB());
-            return result;
+            Number solution = new Number();
+            solution.setA(x.getA()*y.getA());
+            solution.setB(x.getB()*y.getB());
+            return solution;
         },(x, y) -> {
-            Number result = new Number();
-            result.setA(x.getA()*y.getB());
-            result.setB(x.getB()*y.getA());
-            return result;
+            Number solution = new Number();
+            solution.setA(x.getA()*y.getB());
+            solution.setB(x.getB()*y.getA());
+            return solution;
         });
     }
 
