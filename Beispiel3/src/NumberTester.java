@@ -35,7 +35,16 @@ public class NumberTester {
             PrimeNumbers primes = new PrimeNumbers(number);
             return primes.isPrime(number);
         });
-        setPalindromeTester(number -> );
+        setPalindromeTester(number -> {
+            String numberString = ""+number;
+            String invertedNumberString = "";
+            for(int i = numberString.length()-1;i>=0;i--){
+                invertedNumberString+=numberString.charAt(i);
+            }
+            int invertedNumber = Integer.parseInt(invertedNumberString);
+
+            return number==invertedNumber;
+        });
     }
 
     public void setOddEvenTester(NumberTest oddTester){
