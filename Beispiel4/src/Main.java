@@ -85,23 +85,18 @@ public class Main {
             System.out.println("Invalid Input!");
         }
 
-        Number solution;
         switch(option){
             case 1:
-                solution = calculator.add(x,y);
-                printSolution(solution);
+                printSolution(calculator.add(x,y));
                 break;
             case 2:
-                solution = calculator.subtract(x,y);
-                printSolution(solution);
+                printSolution(calculator.subtract(x,y));
                 break;
             case 3:
-                solution = calculator.multiply(x,y);
-                printSolution(solution);
+                printSolution(calculator.multiply(x,y));
                 break;
             case 4:
-                solution = calculator.divide(x,y);
-                printSolution(solution);
+                printSolution(calculator.divide(x,y));
                 break;
             case 5:
                 enterNumbers();
