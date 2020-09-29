@@ -16,8 +16,8 @@ public class Main {
             "> ";
 
     private static AbstractCalculator calculator;
-    private static Number x;
-    private static Number y;
+    private static Number x = new Number();
+    private static Number y = new Number();
 
     public static void main(String[] args) {
         while(true){
@@ -29,7 +29,7 @@ public class Main {
         System.out.print(menuCalculators);
         int option = 0;
         try{
-            option = intInput();
+            option = doubleInput();
         }catch(NumberFormatException ex){
             System.out.println("Invalid Input!");
         }
@@ -63,9 +63,9 @@ public class Main {
     private static void enterNumber(Number number,String numberIdentifier){
         try{
             printEnterNumber(numberIdentifier+" a");
-            number.setA(intInput());
+            number.setA(doubleInput());
             printEnterNumber(numberIdentifier+" b");
-            number.setA(intInput());
+            number.setB(doubleInput());
         }catch(NumberFormatException ex){
             System.out.println("Invalid Input!");
             enterNumber(number, numberIdentifier);
@@ -80,7 +80,7 @@ public class Main {
         System.out.print(menuOperations);
         int option = 0;
         try{
-            option = intInput();
+            option = doubleInput();
         }catch(NumberFormatException ex){
             System.out.println("Invalid Input!");
         }
@@ -114,7 +114,7 @@ public class Main {
                 "-----------------");
     }
 
-    private static int intInput() throws NumberFormatException{
+    private static int doubleInput() throws NumberFormatException{
         Scanner scanner = new Scanner(System.in, "Windows-1252");
         return Integer.parseInt(scanner.nextLine());
     }

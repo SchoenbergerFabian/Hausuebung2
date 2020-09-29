@@ -62,6 +62,20 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Beispiel4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,6 +107,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="973" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601380461676" />
+    <state width="716" height="261" key="GridCell.Tab.0.bottom" timestamp="1601402578377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601402578377" />
+    <state width="716" height="261" key="GridCell.Tab.0.center" timestamp="1601402578377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601402578377" />
+    <state width="716" height="261" key="GridCell.Tab.0.left" timestamp="1601402578377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601402578377" />
+    <state width="716" height="261" key="GridCell.Tab.0.right" timestamp="1601402578377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601402578377" />
+    <state width="716" height="261" key="GridCell.Tab.1.bottom" timestamp="1601402563586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601402563586" />
+    <state width="716" height="261" key="GridCell.Tab.1.center" timestamp="1601402563586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601402563586" />
+    <state width="716" height="261" key="GridCell.Tab.1.left" timestamp="1601402563586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601402563586" />
+    <state width="716" height="261" key="GridCell.Tab.1.right" timestamp="1601402563586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="716" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601402563586" />
     <state x="813" y="190" key="run.anything.popup" timestamp="1601400292643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
