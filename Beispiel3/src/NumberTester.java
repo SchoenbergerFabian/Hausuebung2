@@ -37,11 +37,11 @@ public class NumberTester {
         });
         setPalindromeTester(number -> {
             String numberString = ""+number;
-            String invertedNumberString = "";
-            for(int i = numberString.length()-1;i>=0;i--){
-                invertedNumberString+=numberString.charAt(i);
+            StringBuilder invertedNumberString = new StringBuilder();
+            for(int i = numberString.length()-1; i>=0; i--){
+                invertedNumberString.append(numberString.charAt(i));
             }
-            int invertedNumber = Integer.parseInt(invertedNumberString);
+            int invertedNumber = Integer.parseInt(invertedNumberString.toString());
 
             return number==invertedNumber;
         });
@@ -56,7 +56,7 @@ public class NumberTester {
     }
 
     public void setPalindromeTester(NumberTest palindromeTester){
-        this.palindromeTester = primeTester;
+        this.palindromeTester = palindromeTester;
     }
 
     public void testFile(){
@@ -66,7 +66,7 @@ public class NumberTester {
         try{
             numberOfOperations = Integer.parseInt(lines[0]);
         }catch (NumberFormatException ex){
-            System.out.println("Content of file prevents the program from working!");
+            System.out.println("Invalid content of file!");
             System.exit(0);
         }
 
@@ -78,13 +78,13 @@ public class NumberTester {
                     int operation = Integer.parseInt(args[0]);
                     int number = Integer.parseInt(args[1]);
                     operate(operation,number);
-                    line++;
                 }else{
                     System.out.println("line "+line+": Invalid number of arguments!");
                 }
             }catch (NumberFormatException ex){
                 System.out.println("line "+line+": Invalid arguments!");
             }
+            line++;
         }
     }
 
